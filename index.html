@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600;800&display=swap" rel="stylesheet">
+
+    <script defer src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="head">
+        <h1>Stock Market Analysis</h1>
+    </header>
+
+    <main class="top">
+
+                <section id="chart-section">
+                    <!-- Chart canvas will be dynamically added here by JavaScript -->
+                        <div class="first">
+                            <div style="margin-bottom: 30px;">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                
+                            <!-- Buttons to change the chart range -->
+                            <div class="second">
+                                <button id="1month-btn" class="btn">1 Month</button>
+                                <button id="3month-btn" class="btn">3 Months</button>
+                                <button id="1year-btn" class="btn">1 Year</button>
+                                <button id="5year-btn" class="btn">5 Years</button>
+                            </div>
+                        </div>
+                </section>
+        
+                <section id="list-section">
+                    <!-- List of stocks will be dynamically added here by JavaScript -->
+                    <div class="list">
+                        <button id="aapl" class="list-btn" onclick="forAAPL()">AAPL</button>
+                        <button id="msft" class="list-btn" onclick="forMSFT()">MSFT</button>
+                        <button id="googl" class="list-btn" onclick="forGOOGL()">GOOGL</button>
+                        <button id="amzn" class="list-btn" onclick="forAMZN()">AMZN</button>
+                        <button id="pypl" class="list-btn" onclick="forPYPL()">PYPL</button>
+                        <button id="tsla" class="list-btn" onclick="forTSLA()">TSLA</button>
+                        <button id="jpm" class="list-btn" onclick="forJPM()">JPM</button>
+                        <button id="nvda" class="list-btn" onclick="forNVDA()">NVDA</button>
+                        <button id="nflx" class="list-btn" onclick="forNFLX()">NFLX</button>
+                        <button id="dis" class="list-btn" onclick="forDIS()">DIS</button>
+                    </div>
+                </section>
+                
+     
+        <section id="detail-section">
+            <!-- Stock details will be dynamically added here by JavaScript -->
+            <div class="detail-main">
+                <h2 id="stockName" class="detail-head">Stock Name</h2>
+                <p id="bookValue" class="detail-para1">0.00%</p>
+                <p id="profit" class="detail-para2">$0.00</p>
+            </div>
+            <p id="summary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias veniam aliquid rem magni perferendis rerum consectetur molestiae velit quidem excepturi?</p>
+        </section>
+    </main>
+
+    
+</body>
+</html>
